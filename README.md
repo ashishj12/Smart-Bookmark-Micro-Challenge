@@ -8,27 +8,17 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=for-the-badge&logo=typescript)](https://typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38BDF8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 
----
-
-## 📸 Architecture
-
-![Production Architecture](./architecture.png)
-
----
-
 ## ✨ Features
 
 | Feature                   | Implementation                                                                   |
 | ------------------------- | -------------------------------------------------------------------------------- |
-| **Google OAuth Login**    | Supabase Auth with PKCE flow via `@supabase/ssr`                                 |
-| **Private bookmarks**     | PostgreSQL Row Level Security — users only see their own data                    |
-| **Real-time sync**        | Supabase Realtime WebSocket — changes appear across all open tabs instantly      |
+| **Google OAuth Login**    | Supabase Auth with Proof Key for Code Exchange (PKCE) flow via `@supabase/ssr` |
+| **Private bookmarks**     | PostgreSQL Row Level Security - users only see their own data                    |
+| **Real-time sync**        | Supabase Realtime WebSocket - changes appear across all open tabs instantly      |
 | **Optimistic UI**         | Add/delete updates the UI immediately, rolls back on failure                     |
 | **Server-Side Rendering** | Bookmarks are pre-fetched in a React Server Component for zero loading flash     |
 | **Edge-protected routes** | `middleware.ts` runs on Vercel Edge Network — JWT validated before any page load |
-| **Fully responsive**      | Mobile-first Tailwind layout with `sm:` breakpoints throughout                   |
-| **Favicon detection**     | Google's S2 favicon API shows site icons automatically                           |
-
+| **Fully responsive**      | Mobile-first Tailwind layout with `sm:` breakpoints throughout          
 ---
 
 ## 🏗️ Tech Stack
@@ -38,8 +28,7 @@ Frontend    Next.js 15 (App Router) · React 19 · TypeScript (strict) · Tailwi
 Auth        Supabase Auth · Google OAuth 2.0 · PKCE · @supabase/ssr
 Database    Supabase PostgreSQL · Row Level Security (RLS)
 Realtime    Supabase Realtime · WebSocket (postgres_changes / WAL)
-Hosting     Vercel · Edge Middleware · Streaming SSR
-Fonts       Geist Sans (next/font) · next-themes (dark mode ready)
+Hosting     Vercel
 ```
 
 ---
@@ -191,8 +180,8 @@ BookmarkManager (browser)
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/your-username/smart-bookmark-app.git
-cd smart-bookmark-app
+git clone https://github.com/ashishj12/Smart-Bookmark-Micro-Challenge.git
+cd Smart-Bookmark-Micro-Challenge
 pnpm install
 ```
 
