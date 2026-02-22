@@ -41,29 +41,27 @@ smart-bookmark-app/
 ├── app/
 │   ├── auth/
 │   │   └── callback/
-│   │       └── route.ts          # OAuth callback — exchanges code for session
+│   │       └── route.ts         
 │   ├── dashboard/
-│   │   └── page.tsx              # Server Component — SSR bookmark fetch
-│   ├── globals.css               # CSS custom properties + Tailwind base
-│   ├── layout.tsx                # Root layout — Geist font, ThemeProvider
-│   └── page.tsx                  # Login page — Google OAuth button
+│   │   └── page.tsx              
+│   ├── globals.css              
+│   ├── layout.tsx               
+│   └── page.tsx                  
 │
 ├── components/
-│   └── BookmarkManager.tsx       # Client Component — all UI + realtime logic
+│   └── BookmarkManager.tsx       
 │
 ├── lib/
 │   ├── supabase/
-│   │   ├── client.ts             # Browser Supabase client (createBrowserClient)
-│   │   └── server.ts             # Server Supabase client (createServerClient)
-│   └── utils.ts                  # cn() helper — clsx + tailwind-merge
+│   │   ├── client.ts            
+│   │   └── server.ts            
+│   └── utils.ts                  
 │
-├── middleware.ts                  # Edge middleware — JWT auth guard for /dashboard
-├── tailwind.config.ts             # Theme config — stone/amber palette
-├── tsconfig.json                  # TypeScript strict config + @/* alias
-├── next.config.ts                 # Next.js config
-└── .env.local                     # Supabase URL + publishable key
+├── tailwind.config.ts             
+├── tsconfig.json                 
+├── next.config.ts                 
+└── .env.local                 
 ```
-
 ---
 
 ## 🔄 How It Works — Request Lifecycle
